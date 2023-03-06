@@ -30,6 +30,7 @@
   "rules": {
     "no-var": "error",
     // "prettier/prettier": "error",
+    "react/no-unknown-property": "off",
     "react/react-in-jsx-scope": "off",
     // 禁止出现console
     "no-console": "off",
