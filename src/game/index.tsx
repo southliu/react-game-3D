@@ -1,18 +1,23 @@
 import { Canvas } from '@react-three/fiber'
+import { OrbitControls } from '@react-three/drei'
+import FullScreen from '../components/FullScreen'
+import { DoubleSide } from 'three'
 
 function Game() {
   return (
-    <div>
+    <FullScreen>
       <Canvas shadows>
         <ambientLight intensity={0.1} />
-        <directionalLight color='red' position={[0, 0, 5]} />
-
+        <directionalLight color='pink' position={[0, 0, 5]} />
+        
         <mesh>
-          <boxGeometry args={[2, 2, 2]} />
-          <meshStandardMaterial color='pink' transparent />
+          <planeGeometry args={[5, 5, 5]} />
+          <meshBasicMaterial color='#fff' transparent side={DoubleSide} />
         </mesh>
+
+        <OrbitControls makeDefault />
       </Canvas>
-    </div>
+    </FullScreen>
   )
 }
 

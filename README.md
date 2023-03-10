@@ -2,6 +2,10 @@
 
 React + Three.js 3D游戏
 
+## 📄 文档
+[react-three-fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)<br/>
+[three.js](https://threejs.org/docs/index.html#manual/introduction/Creating-a-scene)
+
 ## 🐱‍💻 安装使用
 
 - 获取项目代码
